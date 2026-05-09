@@ -1,0 +1,18 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "medical_agent": "./agents/medical_agent.py:graph"
+  },
+  "env": ".env",
+  "python_version": "3.11",
+  "http": {
+    "app": "./main_api.py:app",
+    "cors": {
+      "allow_origins": ["*"],
+      "allow_methods": ["*"],
+      "allow_headers": ["*"],
+      "allow_credentials": true
+    }
+  }
+}
